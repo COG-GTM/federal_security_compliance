@@ -362,7 +362,28 @@ After both remediation PRs merge, residual risks are:
 
 ## 10. Phase 9 — Jira Tracking
 
-Epic and stories created in the **UF (US-Federal)** project at https://cog-gtm.atlassian.net/jira/software/projects/UF/boards/926. See §11 for IDs.
+All work is tracked under a single Epic (per `cog-gtm` Jira convention — one Epic with child tasks, not a flat backlog).
+
+**Epic:** [UF-284 — Security Audit — NIST/STIG Compliance](https://cog-gtm.atlassian.net/browse/UF-284) (US-Federal project board: https://cog-gtm.atlassian.net/jira/software/projects/UF/boards/926)
+
+| Finding | Severity | Jira | Owner |
+|---|---|---|---|
+| F-01 PUBLIC_ENDPOINTS runtime bug | High | [UF-285](https://cog-gtm.atlassian.net/browse/UF-285) | Child A |
+| F-02 FSC coverage 18% → ≥90% | High | [UF-286](https://cog-gtm.atlassian.net/browse/UF-286) | Child A |
+| F-03 4× weak MD5/SHA1 | High | [UF-287](https://cog-gtm.atlassian.net/browse/UF-287) | Child B |
+| F-04 Sonar S5852 ReDoS | High | [UF-288](https://cog-gtm.atlassian.net/browse/UF-288) | Child B |
+| F-05 `datetime.utcnow()` deprecation | Medium | [UF-289](https://cog-gtm.atlassian.net/browse/UF-289) | Child A |
+| F-06 Audit-log integrity hash | Medium | [UF-290](https://cog-gtm.atlassian.net/browse/UF-290) | Child A |
+| F-07 Password expiration (IA-5) | Medium | [UF-291](https://cog-gtm.atlassian.net/browse/UF-291) | Child A |
+| F-08 Request without timeout (B113) | Medium | [UF-292](https://cog-gtm.atlassian.net/browse/UF-292) | Child B |
+| F-09 `eval()` in ssh-pubkey (B307) | Medium | [UF-293](https://cog-gtm.atlassian.net/browse/UF-293) | Child B |
+| F-10 Top-2 S3776 refactors | Medium | [UF-294](https://cog-gtm.atlassian.net/browse/UF-294) | Child B |
+| F-11 Pin Dshell setup.py deps | Medium | [UF-295](https://cog-gtm.atlassian.net/browse/UF-295) | Child B |
+| F-12 Dshell security_utils + audit | Medium | [UF-296](https://cog-gtm.atlassian.net/browse/UF-296) | Child B |
+| F-13 B406 XML escape FP | Low | [UF-297](https://cog-gtm.atlassian.net/browse/UF-297) | Child B |
+| F-14 try/except/pass (B110) | Low | [UF-298](https://cog-gtm.atlassian.net/browse/UF-298) | Child B |
+| F-15 B105 anonymous FTP FP | Low | [UF-299](https://cog-gtm.atlassian.net/browse/UF-299) | Child B |
+| F-16 Duplicate Session/AuditEventType | Info | [UF-300](https://cog-gtm.atlassian.net/browse/UF-300) | Follow-up |
 
 ---
 
@@ -386,7 +407,8 @@ Epic and stories created in the **UF (US-Federal)** project at https://cog-gtm.a
 | FSC remediation PR (Child A) | (link populated after Child A finishes) |
 | Dshell remediation PR (Child B) | (link populated after Child B finishes) |
 | Sonar project — Dshell | https://sonarcloud.io/project/overview?id=COG-GTM_USArmy-Dshell |
-| Jira Epic — Security Audit NIST/STIG Compliance | (link populated after Phase 9) |
+| Jira Epic — Security Audit NIST/STIG Compliance | https://cog-gtm.atlassian.net/browse/UF-284 |
+| Jira board — UF (US-Federal) | https://cog-gtm.atlassian.net/jira/software/projects/UF/boards/926 |
 | zero-trust-architecture.md (mapping reference) | `docs/zero-trust-architecture.md` |
 
 ---
