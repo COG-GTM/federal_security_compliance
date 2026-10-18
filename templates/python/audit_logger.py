@@ -36,7 +36,7 @@ class AuditLogger:
     Logs all security-relevant events with immutable storage
     """
     
-    def __init__(self, log_dir: str = "logs", app_name: str = "windsurf-game"):
+    def __init__(self, log_dir: str = "logs", app_name: str = "federal-app"):
         self.log_dir = Path(log_dir)
         self.log_dir.mkdir(exist_ok=True)
         self.app_name = app_name

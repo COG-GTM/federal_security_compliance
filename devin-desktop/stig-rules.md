@@ -2,9 +2,9 @@
 trigger: always_on
 ---
 
-# STIG & NIST 800-53 Security Rules
+# Zero Trust Architecture Rules for Devin Desktop
 
-> Copy this file to `.windsurf/rules/stig-rules.md` in your project.
+> Copy this file to `.devin/rules/stig-rules.md` in your Devin Desktop project.
 
 ## Authentication (STIG V-220629, NIST IA-2, IA-5)
 - Password minimum 14 characters with complexity (upper, lower, digit, special)

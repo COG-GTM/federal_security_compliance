@@ -545,7 +545,7 @@ def handle_resource():
 
 ## Important Note
 
-**Devin is not FedRAMP certified.** This playbook teaches Devin to generate Zero Trust-compliant code. The generated code should be reviewed and deployed in an authorized environment.
+**Devin Cloud's FedRAMP High, IL4, IL5, and ITAR authorizations are in process.** This playbook teaches Devin Cloud to generate Zero Trust-compliant code. The generated code should be reviewed and deployed in an authorized environment.
 
 ---
 

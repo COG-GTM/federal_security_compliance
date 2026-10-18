@@ -1,27 +1,33 @@
 # Federal Security Compliance Framework
 
-> Centralized STIG, NIST 800-53, and Zero Trust compliance for federal systems development with Devin and Windsurf.
+> Centralized STIG, NIST 800-53, and Zero Trust compliance for federal systems development with Devin, Devin Desktop, and Devin CLI.
 
 ## Platform Authorization Status
 
-| Platform | FedRAMP Status | IL Level | Use Case |
-|----------|----------------|----------|----------|
-| **Windsurf** | FedRAMP High Authorized | IL5-IL6 | Production federal systems |
-| **Devin** | Not FedRAMP Certified | N/A | Generate compliant code patterns |
+| Platform | FedRAMP High | IL4 | IL5 | ITAR | Use Case |
+|----------|--------------|-----|-----|------|----------|
+| **Devin Desktop (formerly Windsurf)** | ✓ | ✓ | In Process | ✓ | Federal deployments |
+| **Devin CLI** | ✓ | ✓ | In Process | ✓ | Federal deployments |
+| **Devin Cloud** | In Process | In Process | In Process | In Process | Cloud agent |
+
+Current authorization status: [Devin federal compliance docs](https://docs.devin.ai/federal/compliance).
 
 ## Quick Start
 
-### For Devin Users
+### For Devin Cloud Users
 1. Copy `devin/knowledge.md` → Devin Knowledge
 2. Copy `devin/playbook.md` → Devin Playbooks
 3. Copy `devin/zero-trust-knowledge.md` → Devin Knowledge (Zero Trust)
 4. Copy `devin/zero-trust-playbook.md` → Devin Playbooks (Zero Trust)
-5. Done! Devin will generate Zero Trust compliant code.
+5. Devin Cloud also picks up the committed skill from `.devin/skills/`.
+6. Done! Devin Cloud will generate Zero Trust compliant code.
 
-### For Windsurf Users
-1. Copy `windsurf/stig-rules.md` → `.windsurf/rules/stig-rules.md`
-2. Copy `windsurf/zero-trust-rules.md` → `.windsurf/rules/zero-trust-rules.md`
-3. Done! Cascade will enforce Zero Trust compliance automatically.
+### For Devin Desktop / Devin CLI Users
+1. Copy `.devin/skills/federal-security-compliance/` into your project's `.devin/skills/`. Invoke it with `@federal-security-compliance` in Devin Desktop or `/federal-security-compliance` in Devin CLI, or let Cascade pick it up automatically.
+2. Copy `devin-desktop/stig-rules.md` → `.devin/rules/stig-rules.md`
+3. Copy `devin-desktop/zero-trust-rules.md` → `.devin/rules/zero-trust-rules.md`
+
+Devin Desktop prefers `.devin/rules/*.md` (the existing `trigger:` frontmatter remains unchanged) and still reads `.windsurf/rules/` for legacy projects.
 
 ## What's Included
 
@@ -31,8 +37,9 @@
 | `devin/playbook.md` | Secure development workflow for Devin |
 | `devin/zero-trust-knowledge.md` | Zero Trust principles for Devin |
 | `devin/zero-trust-playbook.md` | Zero Trust workflow for Devin |
-| `windsurf/stig-rules.md` | STIG rules for Windsurf Cascade |
-| `windsurf/zero-trust-rules.md` | Zero Trust rules for Windsurf (FedRAMP context) |
+| `devin-desktop/stig-rules.md` | STIG and NIST rules for Devin Desktop |
+| `devin-desktop/zero-trust-rules.md` | Zero Trust rules for Devin Desktop |
+| `.devin/skills/federal-security-compliance/SKILL.md` | Reusable federal security compliance skill |
 | `templates/python/` | Reusable secure Python modules |
 | `tests/` | Automated compliance verification tests |
 | `docs/` | Architecture and compliance documentation |
