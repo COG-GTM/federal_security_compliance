@@ -2,7 +2,7 @@
 trigger: always_on
 ---
 
-# Zero Trust Architecture Rules for Devin Desktop
+# STIG & NIST 800-53 Security Rules
 
 > Copy this file to `.devin/rules/stig-rules.md` in your Devin Desktop project.
 
