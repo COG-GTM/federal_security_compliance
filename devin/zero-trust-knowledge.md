@@ -269,7 +269,7 @@ When generating code, ensure:
 
 ## Important Note
 
-**Devin is not FedRAMP certified.** This knowledge teaches Devin to generate code that follows Zero Trust principles and can be deployed in FedRAMP/federal environments. The generated code itself must be reviewed and deployed in an authorized environment (like Windsurf for FedRAMP High/IL5-IL6).
+**Devin Cloud's FedRAMP High, IL4, IL5, and ITAR authorizations are in process.** This knowledge teaches Devin Cloud to generate code that follows Zero Trust principles and can be deployed in federal environments. The generated code itself must be reviewed and deployed in an authorized environment (like Devin Desktop or Devin CLI in a FedRAMP High deployment).
 
 ---
 

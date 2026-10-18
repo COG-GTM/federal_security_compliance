@@ -2,13 +2,13 @@
 trigger: always_on
 ---
 
-# Zero Trust Architecture Rules for Windsurf
+# Zero Trust Architecture Rules for Devin Desktop
 
-> Copy this file to `.windsurf/rules/zero-trust-rules.md` in your project.
+> Copy this file to `.devin/rules/zero-trust-rules.md` in your Devin Desktop project.
 
 ## About This Document
 
-**Windsurf is FedRAMP High Authorized and IL5-IL6 certified.** This means code developed in Windsurf can be deployed in federal environments including DoD systems. These rules ensure generated code follows Zero Trust Architecture as defined by NIST SP 800-207 and meets federal security requirements.
+**Devin Desktop (formerly Windsurf) and Devin CLI are FedRAMP High authorized, IL4 authorized, and ITAR authorized; IL5 is In Process. Devin Cloud's FedRAMP High, IL4, IL5, and ITAR authorizations are In Process.** These rules ensure generated code follows Zero Trust Architecture as defined by NIST SP 800-207 and meets federal security requirements.
 
 ---
 

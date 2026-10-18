@@ -300,18 +300,18 @@ def verify_every_request():
 
 ## Deployment Considerations
 
-### For FedRAMP Environments (Windsurf)
+### For FedRAMP Environments (Devin Desktop)
 
-Windsurf is FedRAMP High authorized and IL5-IL6 certified. When deploying in Windsurf:
+Devin Desktop is FedRAMP High authorized, IL4 authorized, and ITAR authorized; IL5 is In Process. Devin CLI has the same authorization status. Refer to the [Devin federal compliance docs](https://docs.devin.ai/federal/compliance) for current status. When deploying with Devin Desktop or Devin CLI:
 
 1. **Use all Zero Trust controls** - They are mandatory, not optional
 2. **Enable CAC/PIV authentication** - Required for DoD systems
 3. **Configure proper logging** - Logs must be retained for 1+ year
 4. **Review security headers** - CSP should be tightened for production
 
-### For Development/Testing (Devin)
+### For Development/Testing (Devin Cloud)
 
-Devin is NOT FedRAMP certified. When using Devin for development:
+Devin Cloud's FedRAMP High, IL4, IL5, and ITAR authorizations are in process. When using Devin Cloud for development:
 
 1. **Generate Zero Trust compliant code** - Use patterns from this repo
 2. **Test security controls** - Run `tests/test_zero_trust.py`

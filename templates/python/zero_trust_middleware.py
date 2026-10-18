@@ -19,7 +19,7 @@ FEDERAL COMPLIANCE:
 - FedRAMP Moderate/High baseline
 
 IMPORTANT: This module provides the implementation patterns. The actual deployment
-must occur in a FedRAMP-authorized environment (like Windsurf) for federal use.
+must occur in a FedRAMP-authorized environment (like Devin Desktop) for federal use.
 """
 
 import secrets
