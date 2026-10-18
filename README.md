@@ -23,7 +23,7 @@ Current authorization status: [Devin federal compliance docs](https://docs.devin
 6. Done! Devin Cloud will generate Zero Trust compliant code.
 
 ### For Devin Desktop / Devin CLI Users
-1. Copy `.devin/skills/federal-security-compliance/` into your project's `.devin/skills/`. Invoke it with `@federal-security-compliance` in Devin Desktop or `/federal-security-compliance` in Devin CLI, or let Cascade pick it up automatically. The skill fetches `templates/python/` and `tests/` from this repo when your project doesn't already have them.
+1. Copy `.devin/skills/federal-security-compliance/` into your project's `.devin/skills/`. Invoke it with `@federal-security-compliance` in Devin Desktop or `/federal-security-compliance` in Devin CLI, or let Cascade pick it up automatically. If your project doesn't already have `templates/python/` and `tests/`, the skill clones this repo to a scratch directory, reads them from there, and copies only the modules it needs into your project.
 2. Copy `devin-desktop/stig-rules.md` → `.devin/rules/stig-rules.md`
 3. Copy `devin-desktop/zero-trust-rules.md` → `.devin/rules/zero-trust-rules.md`
 

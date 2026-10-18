@@ -36,7 +36,9 @@ class AuditLogger:
     Logs all security-relevant events with immutable storage
     """
     
-    def __init__(self, log_dir: str = "logs", app_name: str = "federal-app"):
+    def __init__(self, log_dir: str = "logs", app_name: str = "windsurf-game"):
+        # Default kept as "windsurf-game" so existing log paths
+        # (logs/windsurf-game_*.log) don't move on upgrade. Pass app_name explicitly.
         self.log_dir = Path(log_dir)
         self.log_dir.mkdir(exist_ok=True)
         self.app_name = app_name
