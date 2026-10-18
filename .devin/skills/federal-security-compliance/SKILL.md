@@ -12,6 +12,8 @@ Source of truth: https://github.com/COG-GTM/federal_security_compliance
 - Reference modules: `templates/python/` (`security_utils.py`, `auth_manager.py`, `audit_logger.py`, `zero_trust_middleware.py`, `cac_piv_handler.py`)
 - Verification: `tests/test_zero_trust.py`
 
+These paths are relative to the source repo. If they are not present in the current project (the usual case after copying only this skill), clone the source repo to a scratch directory outside the project, e.g. `git clone --depth 1 https://github.com/COG-GTM/federal_security_compliance /tmp/federal_security_compliance`, and read them from there. Copy only the modules you need into the project.
+
 Prefer reusing or adapting the reference modules over writing new security primitives.
 
 ## 1. Triage the change
